@@ -1,13 +1,18 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 .flex-conteiner{
     display: flex;
     gap: 5%;
     background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+
     
 }
 
 #div-esquerda{
+    
     flex:30%;
     background-color: black;
     color: white;
@@ -21,3 +26,4 @@
     padding-top: 2%;
     padding-left: 2%;
 }
+
