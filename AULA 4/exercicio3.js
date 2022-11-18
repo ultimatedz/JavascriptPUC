@@ -13,13 +13,9 @@ const albums = [
   ];
 
 
-  const marisaMonteAlbums = albums.
-  filter(item => item.singer === 'Marisa monte').
-  map(item => {
-    return {
-      album: item.name,
-      year: item.year
-    }
-  })
+const listaDisco = albums.filter(item => item.year < 2005).map(item => item.score)
+const mediaDisco = Number((listaDisco.reduce((acc, item) => {
+  return acc = acc + item
+},0) / listaDisco.length).toFixed(2))
 
-  console.log (marisaMonteAlbums);
+console.log(mediaDisco)

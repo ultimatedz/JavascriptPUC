@@ -13,13 +13,6 @@ const albums = [
   ];
 
 
-  const marisaMonteAlbums = albums.
-  filter(item => item.singer === 'Marisa monte').
-  map(item => {
-    return {
-      album: item.name,
-      year: item.year
-    }
-  })
+const listaCantorAlbum = albums.map(item =>  `${item.singer}: ${item.name}` )
 
-  console.log (marisaMonteAlbums);
+console.log(listaCantorAlbum)
